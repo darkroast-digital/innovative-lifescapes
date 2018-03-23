@@ -1,0 +1,51 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}partners{% endblock %}
+{% block title %}Partners{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+
+{# Hero Section #}
+
+<section class="hero">
+    <div class="hero__container container">
+        <h1>Quality craftsmenship</h1>
+        <h1><span>Requires quality products</span></h1>
+    </div>
+</section>
+
+{# End Hero Section #}
+
+{# Partners Intro Section #}
+
+<section class="partners-intro">
+    <div class="partners-intro__container container">
+        <h2>Our Partners</h2>
+        <p>Our partners are an integral part of our success. We rely on them to not only supply us top quality products in a timely manner, but to advise and coach us on the latest products and techniques. Their advice to us is invaluable and we are proud to collaborate with some amazing companies that are as excited as us to be apart of this journey.</p>
+    </div>
+</section>
+
+{# End Partners Intro Section #}
+
+{# Logos Section #}
+
+<section class="logos">
+    <div class="logos__container container">
+
+        {% for item in partners %}
+            <div class="partner column-3">
+                <a href="{{ item.link }}" target="_blank">
+                    <div class="img-wrapper">
+                        <img src="/assets/img/partners/{{ item.img }}.png" alt="{{ item.alt }}" draggable="false">
+                    </div>
+                    <h3>{{ item.company }}</h3>
+                </a>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+{# End Logos Section #}
+
+{% endblock %}

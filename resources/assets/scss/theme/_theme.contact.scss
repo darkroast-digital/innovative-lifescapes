@@ -1,0 +1,207 @@
+/*
+|--------------------------------------------------------------------------
+| #CONTACT PAGE STYLES
+|--------------------------------------------------------------------------
+*/
+
+.contact {
+
+    // #HERO
+    // =========================================================================
+
+    .hero {
+        background:$secondary url('../img/contact-hero.jpg') no-repeat;
+        background-size:cover;
+        height:70vh;
+        background-position:50% 100%;
+
+        &__container {
+            flex-direction:column;
+            align-items:left;
+            justify-content:flex-end;
+            height:100%;
+            padding-bottom:5rem;
+            color:#ffffff;
+
+            @media screen and (max-width:48em) {
+                display:flex;
+            }
+
+            @media screen and (max-width:32em) {
+                padding-bottom:2rem;
+            }
+
+            h1 {
+                color:#ffffff;
+                font-size:4.5rem;
+                text-transform:uppercase;
+                margin-bottom:0;
+
+                @media screen and (max-width:90em) {
+                    font-size:3.5rem;
+                }
+
+                @media screen and (max-width:64em) {
+                    font-size:3rem;
+                }
+
+                @media screen and (max-width:48em) {
+                    font-size:2.5rem;
+                }
+
+                @media screen and (max-width:32em) {
+                    font-size:1.75rem;
+                }
+
+                &:first-of-type {
+                    margin-bottom:-1rem;
+
+                    @media screen and (max-width:48em) {
+                        margin-bottom:-.5rem;
+                    }
+                }
+
+                span {
+                    font-weight:900;
+                    font-size:5.5rem;
+
+                    @media screen and (max-width:90em) {
+                        font-size:4.5rem;
+                    }
+
+                    @media screen and (max-width:64em) {
+                        font-size:4rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        font-size:2.9rem;
+                    }
+
+                    @media screen and (max-width:32em) {
+                        font-size:1.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+
+    // #MAIN CONTACT DETAILS
+    // =========================================================================
+
+    &__container {
+
+        .contact-details {
+            padding-right:1rem;
+
+            // Google map
+            #contactMap {
+                height:10rem!important;
+                width:100%;
+            }
+
+            .container--full {
+
+                @media screen and (max-width:48em) and (min-width:513px) {
+                    display:flex;
+                }
+            }
+
+            .column-6 {
+
+                @media screen and (max-width:48em) and (min-width:513px) {
+                    max-width:calc(50% - 1rem);
+                }
+                
+                // Address container
+                &:first-of-type {
+                    margin-left:0;
+                }
+
+                // Social links container
+                &:last-of-type {
+                    margin-right:0;
+                }
+                
+                // Social links
+                &.social {
+
+                    @media screen and (max-width:64em) and (min-width:769px) {
+                        padding-left:3rem;
+                    }
+
+                    .link {
+
+                        a {
+                            display:flex;
+                            align-items:center;
+                            margin-bottom:1rem;
+                            color:$font-color;
+
+                            &:hover {
+                                color:$primary;
+                            }
+
+                            p {
+                                margin-bottom:0;
+                                margin-left:.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Contact form
+        .contact-form {
+            padding-left:1rem;
+
+            form {
+
+                .container--full {
+                    padding:0;
+
+                    .column-6 {
+
+                        &:first-of-type {
+                            margin-left:0;
+                        }
+
+                        &:last-of-type {
+                            margin-right:0;
+                        }
+                    }
+
+                    .column-12 {
+                        margin-right:0;
+                        margin-left:0;
+                    }
+
+                    .field {
+
+                        label {
+                            display:none;
+                        }
+
+                        input, textarea {
+                            border:none;
+                            border-bottom:solid 2px #cccccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #BANNER SECTION
+    // =========================================================================
+
+    .banner {
+        margin-bottom:3rem;
+    }
+}

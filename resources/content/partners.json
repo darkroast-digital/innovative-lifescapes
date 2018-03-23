@@ -1,0 +1,86 @@
+[
+    {
+        "company": "Martindale Windows",
+        "link": "http://www.martindalewindow.com/",
+        "img": "martindale_logo",
+        "alt": "Martindale Windows & Doors Inc."
+    },
+    {
+        "company": "Richelieu - Hardware",
+        "link": "https://www.richelieu.com/ca/en/",
+        "img": "richeleau_logo",
+        "alt": "Richelieu"
+    },
+    {
+        "company": "CanSave - Cabinetry",
+        "link": "https://cansave.ca/",
+        "img": "cansave_logo",
+        "alt": "CanSave - Cabinetsmith; Building materials; Doorsmith"
+    },
+    {
+        "company": "Rona - Sauve's Home Center Ltd. - Lumber",
+        "link": "https://www.rona.ca/en",
+        "img": "rona_logo",
+        "alt": "Rona"
+    },
+    {
+        "company": "The Brick",
+        "link": "https://www.thebrick.com/",
+        "img": "brick_logo",
+        "alt": "The Brick"
+    },
+    {
+        "company": "International Furniture Distribution Centre Ltd.",
+        "link": "https://www.ifdc.ca/",
+        "img": "international_furniture_logo",
+        "alt": "IFDC - International Furniture Distribution Centre Ltd."
+    },
+    {
+        "company": "Z Modular - Chassis",
+        "link": "http://www.z-modular.com/",
+        "img": "z_modular_logo",
+        "alt": "A Modular (tm). A division of Zekelman Industries."
+    },
+    {
+        "company": "Standard Axles",
+        "link": "http://standardaxle.ca/",
+        "img": "standard_axle_logo",
+        "alt": "Standard Axle Co. Ltd."
+    },
+    {
+        "company": "Dimanti Stone Works",
+        "link": "http://www.dswstone.com/",
+        "img": "dimanti_logo",
+        "alt": "Dimanti"
+    },
+    {
+        "company": "Dimplex - Fireplace",
+        "link": "https://www.dimplex.com/en/",
+        "img": "dimplex_logo",
+        "alt": "Dimplex"
+    },
+    {
+        "company": "Tarkett",
+        "link": "https://www.tarkett.com/",
+        "img": "tarkett_logo",
+        "alt": "Tarkett"
+    },
+    {
+        "company": "Centura",
+        "link": "http://www.centura.ca/",
+        "img": "centura_logo",
+        "alt": "Centura - London | Windsor"
+    },
+    {
+        "company": "Electrozad",
+        "link": "http://www.electrozad.com/",
+        "img": "electrozad_logo",
+        "alt": "Electrozad Supply - Electrical wholesale distributors"
+    },
+    {
+        "company": "KWP - Exteriors",
+        "link": "https://www.kwpproducts.com/",
+        "img": "kpw_logo",
+        "alt": "KWP"
+    }
+]

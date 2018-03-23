@@ -1,0 +1,59 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}photos{% endblock %}
+{% block title %}Photos{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+
+{# Hero Section #}
+
+<section class="hero">
+    <div class="hero__container container">
+        <h1>See what all</h1>
+        <h1><span>The excitement is about</span></h1>
+    </div>
+</section>
+
+{# End Hero Section #}
+
+{# Gallery Section #}
+
+<section class="gallery">
+    <div class="gallery__container container">
+        <div class="top container">
+            <h2>Gallery</h2>
+            <div class="categories">
+                <button class="gallery-cat is--active" data-category="all">All</button>
+                <button class="gallery-cat" data-category="interior">Interior</button>
+                <button class="gallery-cat" data-category="exterior">Exterior</button>
+                <button class="gallery-cat" data-category="production">Production</button>
+                <button class="gallery-cat" data-category="other">Other</button>
+            </div>
+        </div>
+
+        <div class="photos__container container--full">
+            {% for photo in gallery %}
+                <div class="column-3 lightbox__trigger">
+                    <img src="/assets/img/gallery/thumbnails/{{ photo.thumbnail }}" draggable="false" class="all {{ photo.cat }}" data-lightbox="/assets/img/gallery/{{ photo.lightbox }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{# End Gallery Section #}
+
+{# Lightbox #}
+
+<div class="lightbox">
+    <div class="lightbox_content">
+        <span class="close">X</span>
+        <img src="">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</div>
+
+{# End Lightbox #}
+
+{% endblock %}

@@ -1,0 +1,261 @@
+/*
+|--------------------------------------------------------------------------
+| #ABOUT PAGE STYLES
+|--------------------------------------------------------------------------
+*/
+
+.about {
+
+    // #HERO
+    // =========================================================================
+
+    .hero {
+        background:$secondary url('../img/about-hero.jpg') no-repeat;
+        background-size:cover;
+        height:70vh;
+        background-position:50% 100%;
+
+        &__container {
+            flex-direction:column;
+            align-items:left;
+            justify-content:flex-end;
+            height:100%;
+            padding-bottom:5rem;
+            color:#ffffff;
+
+            @media screen and (max-width:48em) {
+                display:flex;
+            }
+
+            @media screen and (max-width:32em) {
+                padding-bottom:2rem;
+            }
+
+            h1 {
+                color:#ffffff;
+                font-size:4.5rem;
+                text-transform:uppercase;
+                margin-bottom:0;
+
+                @media screen and (max-width:90em) {
+                    font-size:3.5rem;
+                }
+
+                @media screen and (max-width:64em) {
+                    font-size:3rem;
+                }
+
+                @media screen and (max-width:48em) {
+                    font-size:2.5rem;
+                }
+
+                @media screen and (max-width:32em) {
+                    font-size:1.75rem;
+                }
+
+                &:first-of-type {
+                    margin-bottom:-1rem;
+
+                    @media screen and (max-width:48em) {
+                        margin-bottom:-.5rem;
+                    }
+                }
+
+                span {
+                    font-weight:900;
+                    font-size:5.5rem;
+
+                    @media screen and (max-width:90em) {
+                        font-size:4.5rem;
+                    }
+
+                    @media screen and (max-width:64em) {
+                        font-size:4rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        font-size:2.9rem;
+                    }
+
+                    @media screen and (max-width:32em) {
+                        font-size:1.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #BANNER
+    // =========================================================================
+
+    .banner {
+        margin-top:3rem;
+
+        &__container {
+
+            img {
+                @media screen and (max-width:48em) {
+                    max-width:30px;
+                }
+            }
+
+            p {
+                font-size:2.7rem;
+                font-weight:500;
+
+                @media screen and (max-width:64em) {
+                    font-size:1.8rem;
+                }
+
+                @media screen and (max-width:48em) {
+                    font-size:1.5rem;
+                }
+
+                span {
+                    font-weight:900;
+                    font-size:3rem;
+
+                    @media screen and (max-width:64em) {
+                        font-size:2rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        font-size:1.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #OUR MOTIVATION
+    // =========================================================================
+
+    .motivation {
+
+        &__container {
+            flex-direction:column;
+                
+            // Service icons
+            .services {
+                padding-top:1rem;
+                padding-bottom:0;
+
+                .service {
+                    display:flex;
+                    align-items:center;
+                    margin-bottom:2rem;
+
+                    p {
+                        margin-bottom:0;
+                    }
+
+                    img {
+                        margin-right:.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+
+    // #OUR HISTORY
+    // =========================================================================
+    
+    .history {
+        background-color:#efefef;
+
+        &__container {
+            
+            // Image container
+            .images {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+
+                img {
+                    box-shadow:4px 4px 6px rgba(#333333, .4);
+
+                    @media screen and (max-width:48em) {
+                        margin-bottom:2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+
+    // #OUR TEAM
+    // =========================================================================
+
+    .team {
+
+        &__container {
+
+            .team-members__container {
+                padding-bottom:0;
+                
+                // Individual team member card
+                .team-member {
+                    position:relative;
+
+                    @media screen and (max-width:64em) {
+                        width:calc(50% - 2rem);
+                        margin-bottom:3rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        width:100%;
+                        margin-bottom:4rem;
+                    }
+
+                    h4 {
+                        color:#ffffff;
+                        background-color:#cc3333;
+                        position:absolute;
+                        z-index:-1;
+                        font-weight:600;
+                        left:-2rem;
+                        top:-2.25rem;
+                        padding:.5rem .75rem 8rem 3rem;
+                    }
+
+                    h5 {
+                        text-transform:uppercase;
+                        margin-bottom:.25rem;
+                        font-weight:600;
+                        font-size:1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #CTA
+    // =========================================================================
+
+    .cta {
+
+        &__container {
+            background:url('../img/about-cta-bg.jpg') no-repeat;
+            background-size:cover;
+
+            @media screen and (max-width:48em) {
+                background-position-x:40%;
+            }
+        }
+    }
+
+}

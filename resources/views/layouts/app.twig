@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#ba2726">
+
+    <!-- Title and Description -->
+
+    <title>{% block title %}{% endblock %} | Innovative Lifescapes</title>
+    <meta name="description" content="{% block description %}Innovative Lifescapes is the genesis of a movement in the leisure industry across Canada. The movement is driven by a synergy of technology, ideas and people whose collective goal is change we way experience the outdoors. Welcome to the movement.{% endblock %}">
+    <meta name="keywords" content="Landscape Effects, Landscape Effects Group, Landscape Effects Property Management Inc., Rochester Place Golf Club & Resort, Parkside Grille, Red Tree Collection, Syn Lawn FX, Innovative Lifescapes, The Drive Magazine, The Drive, campgrounds, resorts, Park model rvs, leisure industry, boutique builder, Belle River, Windsor, Ontario, Park models, offices, office construction, washroom building construction, laundry building construction, game room construction, back yard building construction">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="/assets/img/fav.png">
+    
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Innovative Lifescapes">
+    <meta property="og:description" content="Innovative Lifescapes is the genesis of a movement in the leisure industry across Canada. The movement is driven by a synergy of technology, ideas and people whose collective goal is change we way experience the outdoors. Welcome to the movement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="innovativelifescapes.com">
+    <meta property="og:site_name" content="Innovative Lifescapes">
+    <meta property="og:image" content="/assets/img/og.jpg">
+    
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+    {% include 'partials/off-canvas.twig' %}
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+            <div class="content">
+                {% include 'partials/overlay.twig' %}
+
+                <header class="header">
+                    <div class="header__container container">
+                        {% include 'partials/nav.twig' %}
+                    </div>
+                </header>
+
+                {% block content %}{% endblock %}
+                {% include 'partials/footer.twig' %}
+            </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAilehVSrKPhlpPMercklmfdw2tmX61qBw"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    {# You make me wanna be stupid when we talk about Plato and you ask 'green or red'... #}
+</body>
+</html>

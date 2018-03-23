@@ -1,0 +1,97 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}contact{% endblock %}
+{% block title %}Contact{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero__container container">
+        <h1><span>Contact Us</span></h1>
+    </div>
+</section>
+
+{# End Hero Section #}
+
+{# Contact Section #}
+
+<section class="contact">
+    <div class="contact__container container">
+        <div class="contact-details column-6">
+            <div class="map-heading">
+                <h3>Map</h3>
+            </div>
+            <div id="contactMap"></div>
+            
+            <div class="container--full">
+                <div class="address column-6">
+                    <h3>Address</h3>
+                    <p>Innovative Lifescapes<br/>
+                        1023 County Rd. 2<br/>
+                        Belle River, ON N0R 1A0</p>
+                    <p>1 (519) 728-2361<br/>
+                        info@innovativelifescapes.com</p>
+                </div>
+
+                <div class="social column-6">
+                    <h3>Social</h3>
+                    <div class="link">
+                        <a href="https://www.facebook.com/innovativelifescapes/" target="_blank">
+                            <img src="/assets/img/facebook.png" draggable="false">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+
+                    <div class="link">
+                        <a href="https://www.instagram.com/innovative_lifescapes/" target="_blank">
+                            <img src="/assets/img/instagram.png" draggable="false">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form column-6">
+            <h3>Contact Form</h3>
+            <form action="{{ path_for('contact') }}" method="post" class="form">
+                <div class="container--full">
+                    <div class="field column-6">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="field column-6">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="field column-12">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button class="button submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{# End Contact Section #}
+
+{# Banner Section #}
+
+<section class="banner">
+    <div class="container banner__container">
+        <img src="/assets/img/left-quote.png" draggable="false">
+        <div class="text">
+            <p>People ignore design</p>
+            <p>that ignores people</p>
+        </div>
+        <img src="/assets/img/right-quote.png" draggable="false">
+    </div>
+</section>
+
+{# End Banner Section #}
+
+{% endblock %}

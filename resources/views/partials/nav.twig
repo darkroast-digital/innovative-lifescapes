@@ -1,0 +1,28 @@
+<nav class="nav">
+    <div class="nav__container container">
+        <div class="logo-wrapper">
+            <a href="{{ path_for('home') }}">
+                <img src="/assets/img/logo.png" alt="Innovative Lifescapes. Design. Build. Live." draggable="false">
+            </a>
+        </div>
+
+        <div class="menu">
+            <ul class="nav__navbar is--active">
+                <li class="{% if current_path == path_for('home') %}is--active{% endif %}"><a href="{{ path_for('home') }}">Home</a></li>
+                <li class="{% if current_path == path_for('about') %}is--active{% endif %}"><a href="{{ path_for('about') }}">About</a></li>
+                <li class="{% if current_path == path_for('models') %}is--active{% endif %}"><a href="{{ path_for('models') }}">Models</a></li>
+                <li class="{% if current_path == path_for('partners') %}is--active{% endif %}"><a href="{{ path_for('partners') }}">Partners</a></li>
+                <li class="{% if current_path == path_for('photos') %}is--active{% endif %}"><a href="{{ path_for('photos') }}">Photos</a></li>
+                <li class="{% if current_path == path_for('faqs') %}is--active{% endif %}"><a href="{{ path_for('faqs') }}">FAQs</a></li>
+                <li class="{% if current_path == path_for('careers') %}is--active{% endif %}"><a href="{{ path_for('careers') }}">Careers</a></li>
+                <li class="{% if current_path == path_for('contact') %}is--active{% endif %}"><a href="{{ path_for('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.facebook.com/innovativelifescapes/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/innovative_lifescapes/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+         {% include 'partials/hamburger.twig' %}
+    </div>
+</nav>

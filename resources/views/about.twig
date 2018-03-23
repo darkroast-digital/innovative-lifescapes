@@ -1,0 +1,132 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}about{% endblock %}
+{% block title %}About{% endblock %}
+{% block description %}As the newest division of the Landscape Effects Group of companies, Innovative Lifescapes was founded at the intersection of two longstanding divisions of the group: Landscape Effects Design & Build and Rochester Place Golf Club & Resort.{% endblock %}
+
+{% block content %}
+
+{# Hero Section #}
+
+<section class="hero">
+    <div class="hero__container container">
+        <h1>Big enough to provide</h1>
+        <h1><span>Small enough to care.</span></h1>
+    </div>
+</section>
+
+{# End Hero Section #}
+
+{# Banner Section #}
+
+<section class="banner">
+    <div class="banner__container container">
+        <img src="/assets/img/left-quote.png" draggable="false">
+        <div class="text">
+            <p>Creativity is thinking of new things</p>
+            <p><span>Innovation is doing new things</span></p>
+        </div>
+        <img src="/assets/img/right-quote.png" draggable="false">
+    </div>
+</section>
+
+{# End Banner Section #}
+
+{# Motivation Section #}
+
+<section class="motivation">
+    <div class="motivation__container container">
+        <h2>Our Motivation</h2>
+        <h3>What was the inspiration to build Park models?</h3>
+        <p>When we mixed one of Western Ontario’s premier resorts with the award-winning Landscape effects group the results were breathtaking. We had the resort, the landscaping and so the natural next step was to create a leisure product that fitted perfectly into that environment. The result was Innovative Lifescapes. We produced a product that not only was perfect visually but also technically and built to the highest standards in the industry.</p>
+
+        <div class="services container--full">
+            <div class="column-4 service">
+                <img src="/assets/img/service-handcrafted.png" draggable="false">
+                <p>Handcrafted, boutique style production</p>
+            </div>
+            <div class="column-4 service">
+                <img src="/assets/img/service-management.png" draggable="false">
+                <p>Transparent and honest management</p>
+            </div>
+            <div class="column-4 service">
+                <img src="/assets/img/service-designed.png" draggable="false">
+                <p>Designed by industry professionals</p>
+            </div>
+            <div class="column-4 service">
+                <img src="/assets/img/service-built.png" draggable="false">
+                <p>Built to suit modern day lifestyles</p>
+            </div>
+            <div class="column-4 service">
+                <img src="/assets/img/service-evolving.png" draggable="false">
+                <p>Constantly evolving to suit industry needs</p>
+            </div>
+            <div class="column-4 service">
+                <img src="/assets/img/service-quality.png" draggable="false">
+                <p>High degree of service quality</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# End Motivation Section #}
+
+{# History Section #}
+
+<section class="history">
+    <div class="history__container container">
+        <div class="column-7 content">
+            <h2>Our History</h2>
+            <h3>25 Years of changing the way we experience the outdoors</h3>
+            <p>As the newest division of the Landscape Effects Group of companies, Innovative Lifescapes was founded at the intersection of two longstanding divisions of the group: Landscape Effects Design & Build and Rochester Place Golf Club & Resort.</p>
+            <p>After undergoing a major transformation in recent years, Rochester Place Golf Club & Resort is an emerging lifestyle destination in Southwestern Ontario. The vision, direction, and leadership of a strong team is what led Rochester Place into a complete redevelopment, offering a new style of camping.</p>
+            <p>Landscape Effects Design & Build was founded by Paul St. Pierre. In its 25-year history, it has earned the reputation of being one of Southwestern Ontario’s premier landscaping companies. Having received over 40 Landscape Ontario awards over the last 10 years, the team at Landscape Effects is excited to apply their experience and skills to a new opportunity.</p>
+            <p>Although the Landscape Effects Group of Companies has evolved and taken different forms over the past 25 years, the one thing has always remained constant is their unwavering commitment to never embrace the status quo. This philosophy is sure to define and elevate the Innovative Lifestyle’s brand.</p>
+        </div>
+
+        <div class="column-5 images">
+            <img src="/assets/img/il-building-sign.jpg" alt="Innovative Lifescapes" draggable="false">
+        </div>
+
+        <div class="column-12 companies">
+            <img src="/assets/img/history-companies.png" alt="Landscape Effects Group, Landscape Effects Property Management Inc., Rochester Place Golf Club & Resort, Parkside Grille, Red Tree Collection, Syn Lawn FX, Innovative Lifescapes, The Drive" draggable="false">
+        </div>
+    </div>
+</section>
+
+{# End History Section #}
+
+{# Team Section #}
+
+<section class="team">
+    <div class="team__container container">
+        <h2>Our Team</h2>
+        <div class="team-members__container container--full">
+
+            {% for item in team %}
+                <div class="column-3 team-member">
+                    <h4>{{ item.name }}</h4>
+                    <img src="/assets/img/team/{{ item.img }}" alt="{{ item.name }}" draggable="false">
+                    <h5>{{ item.title }}</h5>
+                    <p>{{ item.about }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{# End Team Section #}
+
+{# CTA Section #}
+
+<section class="cta">
+    <div class="cta__container container">
+        <p>See the</p>
+        <h3>Movement</h3>
+        <a href="{{ path_for('models') }}" class="button">View Our Models</a>
+    </div>
+</section>
+
+{# End CTA Section #}
+
+{% endblock %}

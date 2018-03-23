@@ -1,0 +1,319 @@
+/*
+|--------------------------------------------------------------------------
+| #CAREERS PAGE STYLES
+|--------------------------------------------------------------------------
+*/
+
+.careers {
+
+    // #HERO
+    // =========================================================================
+
+    .hero {
+        background:$secondary url('../img/careers-hero.jpg') no-repeat;
+        background-size:cover;
+        height:70vh;
+        background-position:50% 100%;
+
+        &__container {
+            flex-direction:column;
+            align-items:left;
+            justify-content:flex-end;
+            height:100%;
+            padding-bottom:5rem;
+            color:#ffffff;
+
+            @media screen and (max-width:48em) {
+                display:flex;
+            }
+
+            @media screen and (max-width:32em) {
+                padding-bottom:2rem;
+            }
+
+            h1 {
+                color:#ffffff;
+                font-size:4.5rem;
+                text-transform:uppercase;
+                margin-bottom:0;
+
+                @media screen and (max-width:90em) {
+                    font-size:3.5rem;
+                }
+
+                @media screen and (max-width:64em) {
+                    font-size:3rem;
+                }
+
+                @media screen and (max-width:48em) {
+                    font-size:2.5rem;
+                }
+
+                @media screen and (max-width:32em) {
+                    font-size:1.75rem;
+                }
+
+                &:first-of-type {
+                    margin-bottom:-1rem;
+
+                    @media screen and (max-width:32em) {
+                        margin-bottom:-.5rem;
+                    }
+                }
+
+                span {
+                    font-weight:900;
+                    font-size:5.5rem;
+
+                    @media screen and (max-width:90em) {
+                        font-size:4.5rem;
+                    }
+
+                    @media screen and (max-width:64em) {
+                        font-size:4rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        font-size:2.9rem;
+                    }
+
+                    @media screen and (max-width:32em) {
+                        font-size:1.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #OUR FAMILY
+    // =========================================================================
+
+    .family {
+        background-color:#efefef;
+
+        &__container {
+            
+            // Video container
+            .video {
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                position:relative;
+                z-index:1;
+
+                @media screen and (max-width:64em) {
+                    align-items:flex-start;
+                }
+
+                p {
+                    position:absolute;
+                    color:#ffffff;
+                    background-color:#cc3333;
+                    font-weight:600;
+                    right:-2rem;
+                    top:3.5rem;
+                    padding:.5rem .75rem 8rem 20rem;
+                    z-index:-1;
+
+                    @media screen and (max-width:64em) {
+                        padding-left:10rem;
+                        top:1rem;
+                    }
+
+                    @media screen and (max-width:32em) {
+                        right:-1rem;
+                        padding-left:4rem
+                    }
+                }
+                
+                // Video
+                iframe {
+                    width:100%;
+                    height:63%;
+                    border:solid 4px #ffffff;
+                    box-shadow:4px 4px 6px rgba(#333333, .4);
+
+                    @media screen and (max-width:64em) {
+                        height:40%;
+                        margin-top:3rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        height:20rem;
+                        margin-bottom:2rem;
+                    }
+
+                    @media screen and (max-width:32em) {
+                        height:12rem;
+                    }
+                }
+            }
+            
+            // Bottom banner of company logos
+            .companies {
+
+                p {
+                    font-size:.9rem;
+
+                    @media screen and (max-width:48em) {
+                        margin-top:1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #BANNER
+    // =========================================================================
+
+    .banner {
+        margin-top:3rem;
+
+        &__container {
+
+            img {
+                @media screen and (max-width:48em) {
+                    max-width:30px;
+                }
+            }
+
+            p {
+                font-weight:500;
+                font-size:2.2rem;
+
+                @media screen and (max-width:64em) {
+                    font-size:1.4rem;
+                }
+
+                @media screen and (max-width:48em) {
+                    font-size:1.2rem;
+                }
+
+                span {
+                    font-weight:900;
+                    font-size:3.5rem;
+
+                    @media screen and (max-width:64em) {
+                        font-size:2.3rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        font-size:1.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #WHAT WE OFFER
+    // =========================================================================
+
+    .opportunities {
+
+        &__container {
+            flex-direction:column;
+            
+            // List of what they offer
+            .services {
+                align-items:center;
+                justify-content:space-between;
+                width:100%;
+                padding:1rem 0;
+
+                @media screen and (max-width:64em) {
+                    justify-content:flex-start;
+                }
+
+                .service {
+                    display:flex;
+                    align-items:center;
+
+                    @media screen and (max-width:64em) {
+                        width:calc(33.33% - 2rem);
+                        margin-bottom:1rem;
+                    }
+
+                    @media screen and (max-width:48em) {
+                        width:100%;
+                    }
+
+                    img {
+                        margin-right:.5rem;
+                    }
+
+                    p {
+                        margin-bottom:0;
+                    }
+                }
+            }
+
+            .main-wrapper {
+                padding:1rem 0;
+                
+                // Wanted postcard
+                .images {
+                    padding-right:1rem;
+
+                    @media screen and (max-width:48em) {
+                        padding-right:0;
+                        margin-bottom:2rem;
+                    }
+
+                    &:hover {
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    // #RESUME FORM
+    // =========================================================================
+
+    .resume {
+        background-color:#efefef;
+        margin-bottom:3rem;
+
+        &__container {
+            flex-direction:column;
+
+            form {
+
+                .container--full {
+                    padding:1rem 0 0;
+                    margin-left:-.5rem;
+                    margin-right:-.5rem;
+
+                    .field {
+
+                        label {
+                            display:none;
+                        }
+
+                        input {
+                            border:none;
+                            border-bottom:solid 2px #cccccc;
+                        }
+                    }
+                }
+
+                .button {
+                    padding-right:2rem;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Stefanie Goulding",
+        "title": "Chief Operating Officer",
+        "img": "stefanie-goulding.jpg",
+        "about": "Stefanie is the General Manager of Rochester Place Golf Club & Resort. Stefanie’s focus has been to maintain the family values of the business, with an attention to customer enjoyment and business enhancements."
+    },
+    {
+        "name": "John O'Brien",
+        "title": "Director of Sales",
+        "img": "john-obrien.jpg",
+        "about": "John has been in the RV/Campground industry for 25 years. He started his career in the UK, managing some of Europe’s largest RV parks. For two years, he took on the National Sales Director’s role in France, running the sales departments on eight RV resorts."
+    },
+    {
+        "name": "Greg Geml",
+        "title": "VP of Operations & Build",
+        "img": "greg-geml.jpg",
+        "about": "Greg is a licensed carpenter by trade, with additional certifications in Construction Management, PMP, and LEED. Greg has a background in modular fabrication and commercial, institutional, and residential construction."
+    },
+    {
+        "name": "Paul St. Pierre",
+        "title": "President, CEO",
+        "img": "paul-st-pierre.jpg",
+        "about": "As the founder and president of the Landscape Effects Group of Companies, Paul has built his companies on the foundation of providing quality service, design, and his unwavering commitment to always evolve and adapt to meet his customers’ needs."
+    }
+]
